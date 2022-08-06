@@ -1,0 +1,358 @@
+@import url('http://fonts.cdnfonts.com/css/mars-landing');
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     background: white;
+}
+
+.Navigation-Container {
+     position: fixed;
+     top: 0;
+     z-index: 3;
+     width: 100%;
+     height: 65px;
+     border-bottom: 1px solid rgb(150, 150, 150);
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     display: inline-flex;
+}
+
+.Navigation-Top-Left {
+     position: absolute;
+     border-top: 63.5px solid rgb(150, 150, 150);
+     border-left: 42px solid transparent;
+     transform: rotate(180deg);
+     width: 44.6%;
+     left: 0;
+     top: 0;
+}
+
+.Navigation-Top-Center {
+     border-top: 75px solid rgb(242, 67, 80);
+     border-left: 50px solid transparent;
+     border-right: 50px solid transparent;
+     width: 300px;
+}
+
+.Navigation-Top-Center label {
+     position: relative;
+     top: -40px;
+     font-size: 20px;
+     letter-spacing: 8px;
+     color: white;
+     font-family: 'Mars Landing', sans-serif;
+}
+
+.Navigation-Top-Right {
+     position: absolute;
+     border-top: 63.5px solid rgb(150, 150, 150);
+     border-right: 42px solid transparent;
+     transform: rotate(180deg);
+     width: 44.6%;
+     right: 0;
+     top: 0;
+}
+
+.Navigation-Stick {
+     position: relative;
+     background: rgb(150, 150, 150);
+     width: 1px;
+     height: 75px;
+     transform: rotate(33deg);
+     right: 25px;
+}
+
+.Navigation-Stick-1 {
+     position: relative;
+     background: rgb(150, 150, 150);
+     width: 1px;
+     height: 75px;
+     transform: rotate(-33deg);
+     right: -24px;
+}
+
+.Landing-Page {
+     position: relative;
+     top: 66px;
+     background: rgb(15, 15, 15);
+     border-bottom: 1px solid rgb(150, 150, 150);
+     width: 100%;
+     height: 850px;
+}
+
+.Image-Content {
+     position: absolute;
+     margin-left: 650px;
+}
+
+.Image-Content img {
+     max-width: 100%;
+     height: auto;
+}
+
+.Side-Bar {
+     position: absolute;
+     top: 100px;
+     display: flex;
+}
+
+.Bar-1 {
+     background: white;
+     width: 90px;
+     height: 650px;
+}
+
+.Bar-1::before {
+     position: absolute;
+     content: "";
+     border-top: 70px solid rgb(15, 15, 15);
+     border-left: 90px solid transparent;
+     width: 90px;
+}
+
+.Bar-1::after {
+     position: absolute;
+     content: "";
+     bottom: 0;
+     border-top: 70px solid rgb(15, 15, 15);
+     border-right: 90px solid transparent;
+     width: 90px;
+     transform: rotate(180deg);
+}
+
+.Label-Logo-1 {
+     transform: rotate(-90deg);
+}
+
+.Label-Logo-1 label {
+     position: relative;
+     right: 420px;
+     color: rgb(242, 67, 80);
+     font-size: 30px;
+     font-family: 'Mars Landing', sans-serif;
+     letter-spacing: 5px;
+}
+
+.Theme-Container {
+     position: relative;
+     top: 250px;
+     text-align: center;
+}
+
+.Theme-Text {
+     position: relative;
+     font-size: 125px;
+     font-family: 'Mars Landing', sans-serif;
+     color: rgba(255, 255, 255, 0.02);
+     letter-spacing: 90px;
+}
+
+.Theme-Text-2 {
+     position: relative;
+     top: 75px;
+     font-size: 105px;
+     font-family: 'Mars Landing', sans-serif;
+     color: rgba(255, 255, 255, 0.02);
+     letter-spacing: 50px;
+}
+
+.Line-1 {
+     top: 0;
+     position: absolute;
+     background: rgb(150, 150, 150);
+     width: 1px;
+     height: 850px;
+     left: 250px;
+}
+
+.Line-2 {
+     position: absolute;
+     background: rgb(150, 150, 150);
+     width: 100%;
+     height: 1px;
+     bottom: 75px;
+}
+
+.Text-Information-Container {
+     display: block;
+     position: relative;
+     margin: 300px;
+}
+
+.Text-Information {
+     position: relative;
+     top: -20px;
+}
+
+.Text-Information label {
+     color: rgb(242, 67, 80);
+     font-size: 20px;
+     font-family: 'Mars Landing', sans-serif;
+     padding: 10px 10px 10px 10px;
+     background: linear-gradient(135deg, white 93%, transparent 7%);
+}
+
+.Short-Information {
+     position: relative;
+     top: 10px;
+}
+
+.Short-Information h4 {
+     position: relative;
+     font-family: 'Mars Landing', sans-serif;
+     top: -5px;
+     color: white;
+     font-size: 40px;
+     font-weight: bolder;
+     font-variant: small-caps;
+}
+
+.Short-Information p {
+     border-left: 5px solid white;
+     position: relative;
+     padding: 5px 0px 5px 10px;
+     font-family: monospace;
+     top: 5px;
+     color: white;
+     margin-left: 20px;
+     width: 350px;
+}
+
+.Button-Login {
+     position: relative;
+     top: 50px;
+}
+
+.Button-Login a {
+     text-decoration: none;
+     padding: 15px 25px;
+     color: white;
+     border-bottom: 5px solid white;
+     transition: 0.2s;
+     background: rgb(242, 67, 80);
+     font-family: 'Mars Landing', sans-serif;
+}
+
+.Button-Login a:hover {
+     transition: 0.2s;
+     box-shadow: 0 0 10px 1px rgb(242, 67, 80);
+     border-bottom: 0;
+}
+
+.Reminder {
+     position: absolute;
+     margin: 20px 275px;
+}
+
+.Header {
+     padding: 10px 15px 10px 10px;
+     background: linear-gradient(135deg, rgb(242, 67, 80) 94%, transparent 6%);
+}
+
+.Header p {
+     color: white;
+     font-size: 15px;
+     font-family: 'Mars Landing', sans-serif;
+}
+
+.Center-Text {
+     text-align: center;
+     position: relative;
+     top: 100px;
+}
+
+.Label-Text-Center-1 {
+
+}
+
+.Label-Text-Center-1 label {
+     position: relative;
+     right: 100px;
+     font-size: 100px;
+     font-family: 'Mars Landing', sans-serif;
+     letter-spacing: 50px;
+}
+
+.Label-Text-Center-2 {
+     
+}
+
+.Label-Text-Center-2 label {
+     top: 20px;
+     position: relative;
+     left: 140px;
+     font-size: 100px;
+     font-family: 'Mars Landing', sans-serif;
+     letter-spacing: 50px;
+}
+
+.Block-Center-Content {
+     position: relative;
+     top: 145px;
+     background: rgb(84, 57, 76);
+     width: 100%;
+     height: 800px;
+}
+
+.Lines-Container {
+     position: absolute;
+     z-index: 9;
+}
+
+.Line-3 {
+     position: absolute;
+     background: rgb(150, 150, 150);
+     left: 250px;
+     width: 1px;
+     height: 800px;
+}
+
+.Content-Center {
+     display: inline-flex;
+}
+
+.Image-Display {
+     position: absolute;
+     top: 75px;
+     animation: updown 5s ease infinite;
+}
+
+.About-Content {
+     position: absolute;
+     right: 200px;
+}
+
+.Text-About-Label {
+
+}
+
+.Text-About-Label label {
+     font-size: 60px;
+     font-family: 'Mars Landing', sans-serif;
+     color: white;
+     
+}
+
+@keyframes updown {
+     0% {
+       transform: translateY(-5%);
+     }
+   
+     50% {
+       transform: translateY(1%);
+     }
+   
+     100% {
+       transform: translateY(-5%);
+     }
+}
